@@ -1,4 +1,4 @@
-# Análise de Mortes em Game of Thrones - Aplicação Corrigida
+# Análise de Mortes em Game of Thrones 
 
 Esta aplicação realiza análise de dados das mortes de personagens de Game of Thrones, utilizando o dataset `character-deaths.csv`.
 
