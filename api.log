@@ -1,0 +1,44 @@
+/home/ubuntu/got_app_corrigida/DataAnalise.py:21: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  self.df[col].fillna(0, inplace=True)
+/home/ubuntu/got_app_corrigida/DataAnalise.py:25: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  self.df['Allegiances'].fillna('Desconhecido', inplace=True)
+/home/ubuntu/got_app_corrigida/DataAnalise.py:28: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  self.df['Gender'].fillna(-1, inplace=True) # Usando -1 para indicar desconhecido/não preenchido
+/home/ubuntu/got_app_corrigida/DataAnalise.py:30: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  self.df['Nobility'].fillna(-1, inplace=True)
+Dados carregados de character-deaths.csv. Colunas: ['Name', 'Allegiances', 'Death_Year', 'Book of Death', 'Death Chapter', 'Book Intro Chapter', 'Gender', 'Nobility', 'GoT', 'CoK', 'SoS', 'FfC', 'DwD', 'ID']
+Iniciando pré-processamento...
+Coluna 'Gender_Str' criada.
+Coluna 'Morreu' criada.
+Pré-processamento concluído.
+ * Serving Flask app 'api'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [04/Jun/2025 23:28:26] "GET /api/statistics HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2025 23:28:26] "GET /api/gender_count HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2025 23:28:26] "GET /api/record/1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2025 23:28:26] "[33mGET /api/record/9999 HTTP/1.1[0m" 404 -
